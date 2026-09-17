@@ -74,14 +74,14 @@ public class ToRollTheDice {
                         setBestResult(count);
                     }
                 } else {
-                    System.out.println(randomNumber > temp
+                    System.out.println(randomNumber < temp
                             ? "Не ожидал от тебя такого. Загаданное число меньше, брат"
                             : "Я сам в шоке, но, загаданное число больше, брат");
                 }
 
             }
         }
-        System.out.printf("Число: %d, попыток: %d. Лучший результат %d%n", randomNumber, count, getBestResult());
+        System.out.println(String.format("Число: %d, попыток: %d. Лучший результат %d%n", randomNumber, count, getBestResult()));
 
         return true;
     }
